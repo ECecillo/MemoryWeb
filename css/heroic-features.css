@@ -3,10 +3,13 @@
  * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-heroic-features/blob/master/LICENSE)
  */
-html {
-  font-family: "Montserrat", bold;
+html, header, body, footer {
+	font-family: 'Montserrat', Bold;
+	font-size: medium;
 }
-
+header {
+	margin : 5em 0em;
+}
 body {
   padding-top: 20px;
   
