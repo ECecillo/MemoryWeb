@@ -1,0 +1,65 @@
+/*!
+ * Start Bootstrap - Heroic Features (https://startbootstrap.com/template-overviews/heroic-features)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-heroic-features/blob/master/LICENSE)
+ */
+html {
+  font-family: "Montserrat", bold;
+}
+
+body {
+  padding-top: 20px;
+  
+}
+table,
+td {
+    border: 1px solid #333;
+    text-align: center;
+}
+
+thead,
+tfoot {
+  
+    background-color: #333;
+    color: #fff;
+}
+.mbri-globe-2::before{
+  content: "\e934";
+}
+
+
+.table-a,
+.table-b,
+.table-c,
+.table-d {
+	display:inline-block;
+	border-collapse:collapse;
+	vertical-align:top;
+}
+.table-a {
+	margin:0.2em 0.01em;
+}
+.table-b {
+	margin:0.2em 0.01em;
+}
+.table-c {
+	margin:0.2em 0.01em;
+}
+.table-d {
+	margin:0.2em 0.01em;
+}
+.table-a th,
+.table-a td,
+.table-b th,
+.table-b td,
+.table-c th,
+.table-c td,
+.table-d th,
+.table-d td {
+	border:1px solid #ddd;
+	padding:0.01em;
+	vertical-align:top;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	overflow:hidden;
+}
