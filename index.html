@@ -23,9 +23,7 @@
 
 </head>
 
-<body>
-  
-
+<header>
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
@@ -61,28 +59,31 @@
       </div>
     </div>
   </nav>
+</header>
 
+<body>
+  
+
+  
   <!-- Page Content -->
   <div class="container">
 
     <!-- Jumbotron Header -->
-    <header class="jumbotron my-4">
+    <div class="jumbotron my-4">
       <h1 class="display-4">Bienvenue</h1>
       <p class="lead"> Vous trouverez une liste exhaustif de jeu de mémoire qui pourrait vous
-intéressez. Nous essayons de mettre à jour ces derniers le plus souvent
-possible, donc soyez indulgent quand certains bugs peuvent survenir, allez simplement dans la section "Contact".<br>
-Certains jeux sont affichés comme "en-développement", vous pouvez les essayer
-et laisser un commentaire sur ce qui peut être changé en cliquant sur "Commenter".<br>
-Amusez-vous bien !
-</p>
+          intéressez. Nous essayons de mettre à jour ces derniers le plus souvent
+          possible, donc soyez indulgent quand certains bugs peuvent survenir, allez simplement dans la section "Contact".<br>
+          Certains jeux sont affichés comme "en-développement", vous pouvez les essayer
+          et laisser un commentaire sur ce qui peut être changé en cliquant sur "Commenter".<br>
+          Amusez-vous bien !
+      </p>
      
-    </header>
-
-                                                                            <!-- Page Features -->
+      </div>
+                                    <!-- Page Features -->
     
     <!-- Table 1 -->
     <div class="container" align="center">
-    
 
   <!-- Bouton pout le collapse -->
   <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#collapseW" aria-expanded="false" aria-controls="collapseW">
@@ -104,7 +105,7 @@ Amusez-vous bien !
           <div id="WindowCollapse" class="collapse hide" aria-labelledby="CardOne" data-parent="#TableOne">
             <div class="card-body">
                 <p class="card-text">Repérez des paires dans une grille<br>
-			            Tous publics <br>
+			            Tout public <br>
 			            5min de Jeu <br>
 			            Niveau 3/5 <br>
 			            Crée par nicolas69 le 29/12/01 <br></p>
@@ -112,61 +113,92 @@ Amusez-vous bien !
           </div>
           <div class="card-footer">
             <a href="#" class="btn btn-danger">Indisponible</a>
+            <br>
+            <small class="text-muted">Last updated 3 mins ago</small>
           </div>
         </div>
       </div>
 
-      <div class="col-lg-3 col-md-6 mb-4">
+      <!--                         Deuxieme Item                   -->
+      <div class="col-lg-3 col-md-6 mb-4" id="TableOne">
         <div class="card h-100">
-          <!-- <img class="card-img-top" src="http://placehold.it/500x325" alt="..."> -->
-          <div class="card-body">
-            <h4 class="card-title">Window</h4>
-            <p class="card-text">Repérez des paires dans une grille <br>
-              Tous publics <br>
-              5min de Jeu <br>
-              Niveau 3/5 <br>
-              Crée par nicolas69 le 29/12/01 <br></p>
+          <div class="card-header" id="CardOne">
+          <!-- <img class="card-img-top" src="http://placehold.it/500x325" alt="mettre la desciption de l'image ici"> -->
+            <h2 class="mb-0">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#WindowCollapse" aria-expanded="true" aria-controls="WindowCollapse">
+                <h4 class="card-title">Window</h4>
+              </button>
+            </h2>
+          </div>
+          <div id="WindowCollapse" class="collapse hide" aria-labelledby="CardOne" data-parent="#TableOne">
+            <div class="card-body">
+                <p class="card-text">Repérez des paires dans une grille<br>
+			            Tout public <br>
+			            5min de Jeu <br>
+			            Niveau 3/5 <br>
+			            Crée par nicolas69 le 29/12/01 <br></p>
+			        </div>
           </div>
           <div class="card-footer">
-            <a href="#" class="btn btn-primary">Decouvrez le ici</a>
+            <a href="#" class="btn btn-danger">Indisponible</a>
+            <br>
+            <small class="text-muted">Last updated 3 mins ago</small>
           </div>
         </div>
       </div>
-
-      <div class="col-lg-3 col-md-6 mb-4">
+      <div class="col-lg-3 col-md-6 mb-4" id="TableOne">
         <div class="card h-100">
-          <!-- <img class="card-img-top" src="http://placehold.it/500x325" alt="...."> -->
-          <div class="card-body">
-            <h4 class="card-title">Motion</h4>
-            <p class="card-text">Repérez des paires dans une grille <br>
-              Tous publics <br>
-              5min de Jeu <br>
-              Niveau 3/5 <br>
-              Crée par nicolas69 le 29/12/01 <br></p>
+          <div class="card-header" id="CardOne">
+          <!-- <img class="card-img-top" src="http://placehold.it/500x325" alt="mettre la desciption de l'image ici"> -->
+            <h2 class="mb-0">
+              <button class="btn btn-link " type="button" data-toggle="collapse" data-target="#WindowCollapse" aria-expanded="true" aria-controls="WindowCollapse">
+                <h4 class="card-title">Window</h4>
+              </button>
+            </h2>
+          </div>
+          <div id="WindowCollapse" class="collapse hide" aria-labelledby="CardOne" data-parent="#TableOne">
+            <div class="card-body">
+                <p class="card-text">Repérez des paires dans une grille<br>
+			            Tout public <br>
+			            5min de Jeu <br>
+			            Niveau 3/5 <br>
+			            Crée par nicolas69 le 29/12/01 <br></p>
+			        </div>
           </div>
           <div class="card-footer">
-            <a href="#" class="btn btn-primary">Decouvrez le ici</a>
+            <a href="#" class="btn btn-primary">En-developpement</a>
+            <br>
+            <small class="text-muted">Last updated 3 mins ago</small>
           </div>
         </div>
       </div>
 
-      <div class="col-lg-3 col-md-6 mb-4">
+      <div class="col-lg-3 col-md-6 mb-4" id="TableOne">
         <div class="card h-100">
-          <!-- <img class="card-img-top" src="http://placehold.it/500x325" alt="....">  -->
-          <div class="card-body">
-            <h4 class="card-title">Alphabet</h4>
-            <p class="card-text">Repérez des paires dans une grille <br>
-                Tous publics <br>
-                5min de Jeu <br>
-                Niveau 3/5 <br>
-                Crée par nicolas69 le 29/12/01 <br></p>
+          <div class="card-header" id="CardOne">
+          <!-- <img class="card-img-top" src="http://placehold.it/500x325" alt="mettre la desciption de l'image ici"> -->
+            <h2 class="mb-0">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#WindowCollapse" aria-expanded="true" aria-controls="WindowCollapse">
+                <h4 class="card-title">Window</h4>
+              </button>
+            </h2>
+          </div>
+          <div id="WindowCollapse" class="collapse hide" aria-labelledby="CardOne" data-parent="#TableOne">
+            <div class="card-body">
+                <p class="card-text">Repérez des paires dans une grille<br>
+			            Tout public <br>
+			            5min de Jeu <br>
+			            Niveau 3/5 <br>
+			            Crée par nicolas69 le 29/12/01 <br></p>
+			        </div>
           </div>
           <div class="card-footer">
-            <a href="#" class="btn btn-primary">Decouvrez le ici</a>
+            <a href="#" class="btn btn-danger">Indisponible</a>
+            <br>
+            <small class="text-muted">Last updated 3 mins ago</small>
           </div>
         </div>
       </div>
-
     </div>
   </div>
   <p><br></p>
