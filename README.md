@@ -2,6 +2,7 @@
 
 ## Lien vers le github du projet :  https://github.com/ECecillo/IHM2.
 
+### Lien vers le site du projet hebergé par github : https://ececillo.github.io/MemoryWeb/.
 
 
 # [Start Bootstrap - Heroic Features](https://startbootstrap.com/template-overviews/heroic-features/)
