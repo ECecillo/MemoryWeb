@@ -2,6 +2,7 @@
 
 ## Lien vers le github du projet :  https://github.com/ECecillo/IHM2.
 
+### Lien vers le site du projet hebergé par github : https://ececillo.github.io/MemoryWeb/.
 
 
 # [Start Bootstrap - Heroic Features](https://startbootstrap.com/template-overviews/heroic-features/)
@@ -64,4 +65,3 @@ Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework 
 ## Copyright and License
 
 Copyright 2013-2019 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-heroic-features/blob/gh-pages/LICENSE) license.
-# MemoryWeb
