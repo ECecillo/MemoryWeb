@@ -37,7 +37,6 @@ tfoot {
   } 
 
   input[type=text] { 
-	 width: 30%; 
 	 -webkit-transition: width 0.15s ease-in-out; 
 	 transition: width 0.15s ease-in-out; 
   } 
@@ -53,9 +52,6 @@ tfoot {
    margin-left: 90px; 
   } 
 
-.games{ 
-  display: list-item;     
- }  
 
 
 
