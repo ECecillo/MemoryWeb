@@ -10,6 +10,13 @@
 
   <title>IHM MEMOIRE</title>
 
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/v4-shims.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+
   <!-- Bootstrap core JavaScript -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
@@ -81,11 +88,13 @@
         <nav>
           <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="./index/contact.html">Contact</a></li>
 
-
-            <li class="nav-item_custom has-dropdown_custom">
-              <a href="#">Theme</a>
+            <li class="nav-item_custom has-dropdown_custom them">
+              <!-- style="margin-right: 1rem;" -->
+              <a href="#"><i class="fas fa-adjust"></i>
+                <span>Theme</span>
+              </a>
               <ul class="dropdown_custom">
                 <li class="dropdown-item_custom" style="margin-bottom: 0px;margin-right: 0px;">
                   <a id="light" href="#">Light</a>
@@ -96,9 +105,11 @@
               </ul>
             </li>
 
-
-
-            <li><a href="login.php">Login</a></li>
+            <li class="lang">
+              <a href="index/index_GB.html"><i class="fas fa-globe-europe"></i>
+                <span>English</span>
+              </a>
+            </li>
           </ul>
         </nav>
       </div>
