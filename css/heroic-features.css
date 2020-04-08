@@ -7,6 +7,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:500&display=swap');
 
+
 :root {
 	--gray0: #d3d0cb;
 	--gray1: #dbe1e8;
@@ -26,51 +27,6 @@
 	--yellow: #fff565;
 }
 
-body::-webkit-scrollbar {
-	width: 0.25rem;
-}
-
-body::-webkit-scrollbar-track {
-	background: var(--L23-color1);
-}
-
-body::-webkit-scrollbar-thumb {
-	background: #1a1919;
-}
-
-/* ----------------------------------------------Themes ---------------------------------------------- */
-
-.light {
-	--bg: var(--gray0);
-	--bg-nav: linear-gradient(var(--secondary), var(--secondary-less), var(--gray2));
-	--bg-dropdown: var(--surface-light);
-	--text: var(--surface);
-
-	--border-color: var(--blue);
-	--bg-solar: var(--yellow);
-}
-
-
-.dark {
-	--bg: var(--gray5);
-	--bg-nav: linear-gradient(#242627, #3d3d3d, #393939, var(--gray5));
-	--bg-dropdown: var(--surface);
-	--text: var(--gray0);
-	--border-color: var(--secondary);
-	--bg-solar: var(--blue);
-}
-
-
-#dark::before {
-	background: #2a2e35;
-}
-
-#light::before {
-	background: #ffffff;
-}
-
-/* ---------------------------------------------- Fin Themes ---------------------------------------------- */
-
 
 /* -------------------------------- Debut du corp de la page ----------------------------------------  */
 
@@ -85,6 +41,19 @@ body {
 	background: var(--bg);
 	transition: background 500ms ease-in-out, color 1000ms ease-in-out;
 }
+
+body::-webkit-scrollbar {
+	width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+	background: var(--L23-color1);
+}
+
+body::-webkit-scrollbar-thumb {
+	background: #1a1919;
+}
+
 
 main {
 	flex: 1 0 auto;
@@ -222,6 +191,41 @@ nav ul li {
 	vertical-align: middle;
 	margin-right: 10px 	;
 }
+
+/* ----------------------------------------------Themes ---------------------------------------------- */
+
+.light {
+	--bg: var(--gray0);
+	--bg-nav: linear-gradient(var(--secondary), var(--secondary-less), var(--gray2));
+	--bg-dropdown: var(--surface-light);
+	--text: var(--surface);
+
+	--border-color: var(--blue);
+	--bg-solar: var(--yellow);
+}
+
+
+.dark {
+	--bg: var(--gray5);
+	--bg-nav: linear-gradient(#242627, #3d3d3d, #393939, var(--gray5));
+	--bg-dropdown: var(--surface);
+	--text: var(--gray0);
+	--border-color: var(--secondary);
+	--bg-solar: var(--blue);
+}
+
+
+#dark::before {
+	background: #2a2e35;
+}
+
+#light::before {
+	background: #ffffff;
+}
+
+/* ---------------------------------------------- Fin Themes ---------------------------------------------- */
+
+
 /* ---------------------------------------- Fin du style pour le dropdown ------------------------------------------------ */
 
 nav ul li:nth-child(1) {
