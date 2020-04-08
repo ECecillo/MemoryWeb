@@ -8,25 +8,26 @@ const body = document.body;
 // Apply the cached theme on reload
 
 const theme = localStorage.getItem('theme');
-const isSolar = localStorage.getItem('isSolar');
 
-if (theme) {
+
+if (theme === 'light') {
   body.classList.add(theme);
-  isSolar && body.classList.add('solar');
+  body.classList.replace('dark', 'light');
+  console.log(localStorage.getItem('theme'));
 }
 
 // Button Event Handlers
+lightButton.onclick = () => {
+  body.classList.replace('dark', 'light');
+  localStorage.setItem('theme', 'light');
+};
 
 darkButton.onclick = () => {
   body.classList.replace('light', 'dark');
   localStorage.setItem('theme', 'dark');
 };
 
-lightButton.onclick = () => {
-  body.classList.replace('dark', 'light');
 
-  localStorage.setItem('theme', 'light');
-};
 
 
 
