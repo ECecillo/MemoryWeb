@@ -242,7 +242,7 @@ nav ul li:nth-child(4) {
 
 nav ul li a {
 	padding: 1rem 0;
-	margin: 0 3rem;
+	margin-right: 3rem;
 	position: relative;
 	letter-spacing: 2px;
 }
@@ -446,7 +446,12 @@ nav ul li a:hover::after {
 .cat_list {
 	margin: 3rem 0 ;
 }
-
+.them span {
+	margin-left: 1rem;
+}
+.lang span {
+	margin-left: 1rem;
+}
 
 
 /* ------------------------------------------------ Partie pour les medias querries ---------------------------------------- */
@@ -468,5 +473,29 @@ nav ul li a:hover::after {
 @media screen and (min-width: 990px) and (max-width: 1200px) {
 	.row {
 		margin: 0 2rem;
+	}
+}
+@media screen and (min-width: 700px) and (max-width: 1057px) {
+	nav>ul>li {
+		margin-right: 2.5rem;
+	}
+	.them {
+		margin-right: 0;
+	}
+	.them span{
+		margin-left: 0;
+	}
+	.lang span{
+		margin-left: 0;
+	}
+	.dropdown_custom {
+		margin-top: 1rem;
+		transform: translateX(-30%);
+	}
+}
+@media screen and (min-width: 1057px) and (max-width: 1920px) {
+	.dropdown_custom {
+		margin-top: 0.5rem;
+		transform: translateX(-27%);
 	}
 }
