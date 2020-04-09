@@ -41,7 +41,9 @@
   <script defer src="../js/app.js"></script>
 
   <!-- Custom styles for this template -->
-  <link href="../css/style_princip.css" rel="stylesheet">
+  <link href="../css/heroic-features.css" rel="stylesheet">
+
+
 
 </head>
 
@@ -78,8 +80,8 @@
           </li>
 
           <li class="lang">
-            <a href="./contactAnglais.html"><i class="fas fa-globe-europe"></i>
-              <span>English</span>
+            <a href="./contact.html"><i class="fas fa-globe-europe"></i>
+              <span>Français</span>
             </a>
           </li>
         </ul>
@@ -89,28 +91,31 @@
 </header>
 
 <body class="dark">
-
   <!-- Page Content -->
   <div class="container">
+
+    <!-- Page Heading/Breadcrumbs -->
+    <h1 class="mt-4 mb-3">Contact
+    </h1>
+
     <!-- Content Row -->
     <div class="row">
       <!-- Map Column -->
-      <div class="col-lg-8 mb-4">
-        <!-- Embedded Google Map -->
+      <!-- <div class="col-lg-8 mb-4">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11129.02891455645!2d4.8677561396139115!3d45.786074165695375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea6b2ef7f4b7%3A0xf270ae3f54a5eb30!2sDoua%2C%20Lyon!5e0!3m2!1sfr!2sfr!4v1570366683859!5m2!1sfr!2sfr"
           width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-      </div>
+      </div> -->
       <!-- Contact Details Column -->
       <div class="col-lg-4 mb-4">
-        <h3>Nous contacter</h3>
+        <h3>Contact us</h3>
         <p>
           43 Bd du 11 novembre 1918
-          <br>69622 Villeurbanne Cedex
+          <br>69622 Villeurbanne Cedex (France)
           <br>
         </p>
         <p>
-          <abbr title="Téléphone">T</abbr>: 3630 3630 Allo Père Noël
+          <abbr title="Téléphone">T</abbr>: +33 3630 3630 Allo Père Noël
         </p>
         <p>
           <abbr title="Email">E</abbr>:
@@ -118,7 +123,7 @@
           </a>
         </p>
         <p>
-          <abbr title="Horaires">H</abbr>: Jeudi de 10h à 12h
+          <abbr title="Horaires">H</abbr>: Tuesday 10 a.m to 12 a.m
         </p>
       </div>
     </div>
@@ -126,59 +131,55 @@
 
     <!-- Contact Form -->
     <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file.-->
-    <div class="row">
+    <div class="d-flex justify-content-center row">
       <div class="col-lg-8 mb-4">
-        <h3>Nous contacter</h3></br>
-        <form>
-          <div class="form-group">
-            <label for="exampleInputEmail1">Nom Complet <i>(obligatoire)</i></label>
-            <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="NOM Prénom"
-              required data-validation-required-message="Monsieur X ça ne marche pas.">
-          </div>
-          <div class="form-group">
-            <label for="exampleInputEmail1">Adresse Email <i>(obligatoire)</i></label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-              placeholder="prenom.nom@gmail.com" required
-              data-validation-required-message="Pas d'email, pas de message.">
-            <small id="emailHelp" class="form-text text-muted">Non ne partagerons pas votre Email.</small>
-          </div>
+        <h3>Send a message</h3></br>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Full Name*</label>
+          <input type="text" class="form-control" id="name" aria-describedby="emailHelp"
+            placeholder="LastName FisrtName" required data-validation-required-message="Mister X not matching.">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">E-mail adress*</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+            placeholder="FirstName.LasName@gmail.com" required
+            data-validation-required-message="Pas d'email, pas de message.">
+          <small id="emailHelp" class="form-text text-muted">We do not share your email.</small>
+        </div>
 
-          <div class="control-group form-group">
-            <div class="controls">
-              <label>Message <i>(minimum 100 caractères)</i></label>
-              <textarea rows="10" cols="100" class="form-control" id="message" placeholder="Entrez votre message"
-                required data-validation-required-message="Rentrez un message quand même." maxlength="999"
-                style="resize:none"></textarea>
-            </div>
+        <div class="control-group form-group">
+          <div class="controls">
+            <label>Message*</label>
+            <textarea rows="10" cols="100" class="form-control" id="message" placeholder="Enter your message" required
+              data-validation-required-message="enter a message anyway." maxlength="999" style="resize:none"></textarea>
           </div>
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <!--<div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div>
+  <!--<div class="form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>-->
+        </br>
+        <button type="submit" class="btn btn-primary">Send</button>
+        </form>
       </div>
-      </br>
-      </form>
+
     </div>
     <!-- /.row -->
 
   </div>
   <!-- /.container -->
 
-
   <!-- Footer -->
-  <footer class="py-4 bg-dark">
+  <footer class="py-4 ">
     <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; KLCE corp.</p>
+      <p class="m-0 text-center">Copyright &copy; KLCE corp.</p>
     </div>
     <!-- /.container -->
   </footer>
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Contact form JavaScript -->
-  <!-- Do not edit these files! In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
-  <script src="js/jqBootstrapValidation.js"></script>
-  <script src="js/contact_me.js"></script>
 
 </body>
 
