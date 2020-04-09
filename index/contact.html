@@ -2,65 +2,93 @@
 <html lang="en">
 
 <head>
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
 
   <title>IHM MEMOIRE</title>
+
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/v4-shims.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css?family=B612&display=swap" rel="stylesheet">
 
-  <!-- Mobiriseicon  -->
-  <link rel="stylesheet" href="../css/mobirise/style.css">
-
+  <!-- Logo -->
   <link rel="shortcut icon" href="../img/favicon.ico ">
+
   <!-- Bootstrap core CSS -->
-  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!-- Mon script  -->
+  <script defer src="../js/app.js"></script>
 
   <!-- Custom styles for this template -->
-  <link href="../css/heroic-features.css" rel="stylesheet">
+  <link href="../css/style_princip.css" rel="stylesheet">
 
 </head>
+
+<!-- Page Content -->
+<div class="menu-toggle" id="hamburger">
+  <i class="fas fa-bars"></i>
+</div>
 <header>
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">
-        <img src="../img/logo.png" width="30" height="30"
-          alt="logo du site, un cerveau avec un engrenage à l'intérieur">
-        Memory Game Website
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="../index.html">Accueil
-              <span class="sr-only">(current)</span>
+  <!-- Partie sur la navbar -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+  <div class="nv">
+    <div class="overlay"></div>
+    <div class="container_nav">
+      <nav>
+        <ul>
+          <li><a href="index_GB.html">Home</a></li>
+          <li><a href="#">Contact</a></li>
+
+          <li class="nav-item_custom has-dropdown_custom them">
+            <!-- style="margin-right: 1rem;" -->
+            <a href="#"><i class="fas fa-adjust"></i>
+              <span>Theme</span>
             </a>
+            <ul class="dropdown_custom">
+              <li class="dropdown-item_custom" style="margin-bottom: 0px;margin-right: 0px;">
+                <a id="light" href="#">Light</a>
+              </li>
+              <li class="dropdown-item_custom" style="margin-bottom: 0px;margin-right: 0px;">
+                <a id="dark" href="#">Dark</a>
+              </li>
+            </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./about.html">A propos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link link" href="./contactAnglais.html">
-              <img src="../img/mbri-globe-2.svg" width="30" height="30" alt="globe" /> EN
+
+          <li class="lang">
+            <a href="./contactAnglais.html"><i class="fas fa-globe-europe"></i>
+              <span>English</span>
             </a>
           </li>
         </ul>
-      </div>
+      </nav>
     </div>
-  </nav>
+  </div>
 </header>
 
-<body>
+<body class="dark">
 
   <!-- Page Content -->
   <div class="container">
