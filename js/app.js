@@ -34,34 +34,34 @@ darkButton.onclick = () => {
 var open = document.getElementById('hamburger');
 var changeIcon = true;
 
-open.addEventListener("click", function(){
+open.addEventListener("click", function () {
 
-    var overlay = document.querySelector('.overlay');
-    var nav = document.querySelector('nav');
-    var icon = document.querySelector('.menu-toggle i');
+  var overlay = document.querySelector('.overlay');
+  var nav = document.querySelector('nav');
+  var icon = document.querySelector('.menu-toggle i');
 
-    overlay.classList.toggle("menu-open");
-    nav.classList.toggle("menu-open");
+  overlay.classList.toggle("menu-open");
+  nav.classList.toggle("menu-open");
 
-    if (changeIcon) {
-        icon.classList.remove("fa-bars");
-        icon.classList.add("fa-times");
+  if (changeIcon) {
+    icon.classList.remove("fa-bars");
+    icon.classList.add("fa-times");
 
-        changeIcon = false;
-    }
-    else {
-        icon.classList.remove("fa-times");
-        icon.classList.add("fa-bars");
-        changeIcon = true;
-    }
+    changeIcon = false;
+  }
+  else {
+    icon.classList.remove("fa-times");
+    icon.classList.add("fa-bars");
+    changeIcon = true;
+  }
 });
 
 
-$( '.js-input' ).keyup(function() {
-  if( $(this).val() ) {
-     $(this).addClass('not-empty');
+$('.js-input').keyup(function () {
+  if ($(this).val()) {
+    $(this).addClass('not-empty');
   } else {
-     $(this).removeClass('not-empty');
+    $(this).removeClass('not-empty');
   }
 });
 
@@ -69,36 +69,44 @@ $( '.js-input' ).keyup(function() {
 
 function checkInputs() {
   var isValid = true;
-  $('input').filter('[required]').each(function() {
+  $('input').filter('[required]').each(function () {
     if ($(this).val() === '') {
       $('#sub').prop('disabled', true)
       isValid = false;
       return false;
     }
   });
-  if(isValid) {$('#sub').prop('disabled', false)}
+  if (isValid) { $('#sub').prop('disabled', false) }
   return isValid;
 }
 
-
-/* <!-- Modal --> */
-const submit = document.getElementById('sub');
-var modal = "<div class='modal fade' id='exampleModal' tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true'><div class='modal-dialog' role='document'><div class='modal-content'><div class='modal-header'>  <h5 class='modal-title' id='exampleModalLabel'>Modal title</h5>  <button type='button' class='close' data-dismiss='modal' aria-label='Close'>    <span aria-hidden='true'>&times;</span>  </button></div><div class='modal-body'>  ...</div><div class='modal-footer'>  <button type='button' class='btn btn-secondary' data-dismiss='modal'>Close</button>  <button type='button class='btn btn-primary'>Save changes</button></div></div></div></div>"
-
-//Enable or disable button based on if inputs are filled or not
-$('input').filter('[required]').on('keyup',function() {
-checkInputs()
+$('input').filter('[required]').on('keyup', function () {
+  checkInputs()
 })
 
 checkInputs();
 
+/* <!-- Modal --> */
+/* const submit = document.getElementById('sub'); */
+
+
+/* var modal = "<div class='modal fade' id='exampleModal' tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true'><div class='modal-dialog' role='document'><div class='modal-content'><div class='modal-header'>  <h5 class='modal-title' id='exampleModalLabel'>Modal title</h5>  <button type='button' class='close' data-dismiss='modal' aria-label='Close'>    <span aria-hidden='true'>&times;</span>  </button></div><div class='modal-body'>  ...</div><div class='modal-footer'>  <button type='button' class='btn btn-secondary' data-dismiss='modal'>Close</button>  <button type='button class='btn btn-primary'>Save changes</button></div></div></div></div>"
+ */
+
+//Enable or disable button based on if inputs are filled or not
+
+
+
+
 /* Fonction qui renvoie le modal */
 
-if(checkInputs) {
-  document.submit.appendChild(modal);
+/* var node = document.createElement("div"); */
+
+/* if (checkInputs) {
+  submit.appendChild(modal);
 }
 else {
   checkInputs();
-}
+} */
 
 
