@@ -100,6 +100,20 @@
   <!-- Contact Form -->
   <form>
     <div class="form-row d-flex justify-content-center">
+      <div class="col-md-4 mb-3">
+        <label for="validationServer01">Select the reason of the report<span style="color: crimson;">*</span></label>
+        <div class="form-group" required>
+          <select class="custom-select">
+            <option value="">Login doesn't work</option>
+            <option value="1">Link Down</option>
+            <option value="2">Can't Add a Game</option>
+            <option value="3">Other (please detail in the message box)</option>
+          </select>
+          <div class="invalid-feedback">Example invalid custom select feedback</div>
+        </div>
+      </div>
+    </div>
+    <div class="form-row d-flex justify-content-center">
       <div class="col-md-2 mb-3">
         <label for="validationServer01">First name<span style="color: crimson;">*</span></label>
         <input type="text" class="form-control" id="validationServer01" placeholder="First name" required>
@@ -131,20 +145,6 @@
     </div>
     <div class="form-row d-flex justify-content-center">
       <div class="col-md-4 mb-3">
-        <label for="validationServer01">Select the reason of the report<span style="color: crimson;">*</span></label>
-        <div class="form-group" required>
-          <select class="custom-select">
-            <option value="">Login doesn't work</option>
-            <option value="1">Link Down</option>
-            <option value="2">Can't Add a Game</option>
-            <option value="3">Other (please detail in the message box)</option>
-          </select>
-          <div class="invalid-feedback">Example invalid custom select feedback</div>
-        </div>
-      </div>
-    </div>
-    <div class="form-row d-flex justify-content-center">
-      <div class="col-md-4 mb-3">
         <label for="exampleFormControlTextarea1">Message</label>
         <textarea class="form-control" id="exampleFormControlTextarea1" rows="10" cols="50"
           placeholder="Enter your message" required></textarea>
@@ -160,6 +160,7 @@
     </div>
 
     <div class="form-row d-flex justify-content-center" style="padding: 2rem 0;">
+      <button class="btn btn-dark" type="reset" style="margin-right: 2rem;">Cancel</button>
       <button class="btn btn-info" type="button" id="sub" data-toggle="modal" data-target="#ModalConfirm">Submit
         form</button>
       <!-- Modal HTML -->

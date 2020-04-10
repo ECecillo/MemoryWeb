@@ -15,11 +15,9 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/v4-shims.css">
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 
-
   <!-- Bootstrap core JavaScript -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-  </script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
   </script>
@@ -29,6 +27,9 @@
 
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css?family=B612&display=swap" rel="stylesheet">
+
+  <!-- Material-icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
   <!-- Logo -->
   <link rel="shortcut icon" href="../img/favicon.ico ">
@@ -42,6 +43,9 @@
 
   <!-- Custom styles for this template -->
   <link href="../css/style_princip.css" rel="stylesheet">
+
+  <!-- Style page contact -->
+  <link rel="stylesheet" href="../css/style_report.css">
 
 </head>
 
@@ -59,8 +63,8 @@
     <div class="container_nav">
       <nav>
         <ul>
-          <li><a href="index_GB.html">Home</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="../index.html">Accueil</a></li>
+          <li><a href="#">Une erreur ?</a></li>
 
           <li class="nav-item_custom has-dropdown_custom them">
             <!-- style="margin-right: 1rem;" -->
@@ -89,96 +93,103 @@
 </header>
 
 <body class="dark">
-
   <!-- Page Content -->
-  <div class="container">
-    <!-- Content Row -->
-    <div class="row">
-      <!-- Map Column -->
-      <div class="col-lg-8 mb-4">
-        <!-- Embedded Google Map -->
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11129.02891455645!2d4.8677561396139115!3d45.786074165695375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea6b2ef7f4b7%3A0xf270ae3f54a5eb30!2sDoua%2C%20Lyon!5e0!3m2!1sfr!2sfr!4v1570366683859!5m2!1sfr!2sfr"
-          width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-      </div>
-      <!-- Contact Details Column -->
-      <div class="col-lg-4 mb-4">
-        <h3>Nous contacter</h3>
-        <p>
-          43 Bd du 11 novembre 1918
-          <br>69622 Villeurbanne Cedex
-          <br>
-        </p>
-        <p>
-          <abbr title="Téléphone">T</abbr>: 3630 3630 Allo Père Noël
-        </p>
-        <p>
-          <abbr title="Email">E</abbr>:
-          <a href="mailto:plantify@plantimail.com">plantify@plantimail.com
-          </a>
-        </p>
-        <p>
-          <abbr title="Horaires">H</abbr>: Jeudi de 10h à 12h
-        </p>
+  <!-- Page Heading/Breadcrumbs -->
+  <h1 class="d-flex justify-content-center mt-4 mb-3" style="padding: 2rem 0;">Rapport d'Erreur</h1>
+
+  <!-- Contact Form -->
+  <form>
+    <div class="form-row d-flex justify-content-center">
+      <div class="col-md-4 mb-3">
+        <label for="validationServer01">Selectionner la Raison de votre Rapport<span style="color: crimson;">*</span></label>
+        <div class="form-group" required>
+          <select class="custom-select">
+            <option value="">Je n'arrive pas à me connecter</option>
+            <option value="1">Un lien est mort</option>
+            <option value="2">Je n'arrive pas à ajouter un Jeu</option>
+            <option value="3">Autre (S'il-vous-plait veuillez détailler votre erreur dans la partie Message)</option>
+          </select>
+        </div>
       </div>
     </div>
-    <!-- /.row -->
-
-    <!-- Contact Form -->
-    <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file.-->
-    <div class="row">
-      <div class="col-lg-8 mb-4">
-        <h3>Nous contacter</h3></br>
-        <form>
-          <div class="form-group">
-            <label for="exampleInputEmail1">Nom Complet <i>(obligatoire)</i></label>
-            <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="NOM Prénom"
-              required data-validation-required-message="Monsieur X ça ne marche pas.">
+    <div class="form-row d-flex justify-content-center">
+      <div class="col-md-2 mb-3">
+        <label for="validationServer01">Prénom<span style="color: crimson;">*</span></label>
+        <input type="text" class="form-control" id="validationServer01" placeholder="Prénom" required>
+      </div>
+      <div class="col-md-2 mb-3">
+        <label for="validationServer02">Nom<span style="color: crimson;">*</span></label>
+        <input type="text" class="form-control" id="validationServer02" placeholder="Nom" required>
+      </div>
+    </div>
+    <div class="form-row d-flex justify-content-center">
+      <div class="col-md-4 mb-3">
+        <label for="validationServerUsername">Email<span style="color: crimson;">*</span></label>
+        <div class="input-group">
+          <input type="text" class="form-control" id="validationServerUsername" placeholder="nom.prenom"
+            aria-describedby="inputGroupPrepend3" required>
+          <div class="invalid-feedback">
+            Please choose a username.
           </div>
-          <div class="form-group">
-            <label for="exampleInputEmail1">Adresse Email <i>(obligatoire)</i></label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-              placeholder="prenom.nom@gmail.com" required
-              data-validation-required-message="Pas d'email, pas de message.">
-            <small id="emailHelp" class="form-text text-muted">Non ne partagerons pas votre Email.</small>
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroupPrepend3">@</span>
           </div>
+          <input type="text" class="form-control" id="validationServerUsername" placeholder="gmail.com ..."
+            aria-describedby="inputGroupPrepend3" required>
+          <div class="invalid-feedback">
+            Please choose a username.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="form-row d-flex justify-content-center">
+      <div class="col-md-4 mb-3">
+        <label for="exampleFormControlTextarea1">Message</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="10" cols="50"
+          placeholder="Enter your message" required></textarea>
+      </div>
+    </div>
+    <div class="form-row d-flex justify-content-center">
+      <div class="col-md-4 mb-3">
+        <div class="custom-file">
+          <input type="file" class="custom-file-input" id="customFile">
+          <label class="custom-file-label" for="customFile">Voulez-vous joindre une image à votre rapport ?</label>
+        </div>
+      </div>
+    </div>
 
-          <div class="control-group form-group">
-            <div class="controls">
-              <label>Message <i>(minimum 100 caractères)</i></label>
-              <textarea rows="10" cols="100" class="form-control" id="message" placeholder="Entrez votre message"
-                required data-validation-required-message="Rentrez un message quand même." maxlength="999"
-                style="resize:none"></textarea>
+    <div class="form-row d-flex justify-content-center" style="padding: 2rem 0;">
+      <button class="btn btn-dark" type="reset" style="margin-right: 2rem;">Annuler</button>
+      <button class="btn btn-info" type="button" id="sub" data-toggle="modal" data-target="#ModalConfirm">Valider le formulaire</button>
+      <!-- Modal HTML -->
+      <div id="ModalConfirm" class="modal fade">
+        <div class="modal-dialog modal-confirm">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="icon-box">
+                <i class="material-icons">&#xE876;</i>
+              </div>
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body text-center">
+              <h4>Merci !</h4>
+              <p>Nous avons transmis votre rapport avec succès à notre équipe.</p>
             </div>
           </div>
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
       </div>
-      </br>
-      </form>
     </div>
-    <!-- /.row -->
-
-  </div>
-  <!-- /.container -->
 
 
+
+  </form>
   <!-- Footer -->
-  <footer class="py-4 bg-dark">
+  <footer class="py-4 ">
     <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; KLCE corp.</p>
+      <p class="m-0 text-center">Copyright &copy; KLCE corp.</p>
     </div>
     <!-- /.container -->
   </footer>
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Contact form JavaScript -->
-  <!-- Do not edit these files! In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
-  <script src="js/jqBootstrapValidation.js"></script>
-  <script src="js/contact_me.js"></script>
 
 </body>
 
