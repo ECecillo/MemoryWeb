@@ -63,8 +63,8 @@
     <div class="container_nav">
       <nav>
         <ul>
-          <li><a href="../index.html">Accueil</a></li>
-          <li><a href="#">Une erreur ?</a></li>
+          <li><a href="index_GB.html">Home</a></li>
+          <li><a href="#">Report</a></li>
 
           <li class="nav-item_custom has-dropdown_custom them">
             <!-- style="margin-right: 1rem;" -->
@@ -82,8 +82,8 @@
           </li>
 
           <li class="lang">
-            <a href="./contactAnglais.html"><i class="fas fa-globe-europe"></i>
-              <span>English</span>
+            <a href="./report.html"><i class="fas fa-globe-europe"></i>
+              <span>Français</span>
             </a>
           </li>
         </ul>
@@ -95,38 +95,39 @@
 <body class="dark">
   <!-- Page Content -->
   <!-- Page Heading/Breadcrumbs -->
-  <h1 class="d-flex justify-content-center mt-4 mb-3" style="padding: 2rem 0;">Rapport d'Erreur</h1>
+  <h1 class="d-flex justify-content-center mt-4 mb-3" style="padding: 2rem 0;">Report</h1>
 
   <!-- Contact Form -->
   <form>
     <div class="form-row d-flex justify-content-center">
       <div class="col-md-4 mb-3">
-        <label for="validationServer01">Selectionner la Raison de votre Rapport<span style="color: crimson;">*</span></label>
+        <label for="validationServer01">Select the reason of the report<span style="color: crimson;">*</span></label>
         <div class="form-group" required>
           <select class="custom-select">
-            <option value="">Je n'arrive pas à me connecter</option>
-            <option value="1">Un lien est mort</option>
-            <option value="2">Je n'arrive pas à ajouter un Jeu</option>
-            <option value="3">Autre (S'il-vous-plait veuillez détailler votre erreur dans la partie Message)</option>
+            <option value="">Login doesn't work</option>
+            <option value="1">Link Down</option>
+            <option value="2">Can't Add a Game</option>
+            <option value="3">Other (please detail in the message box)</option>
           </select>
+          <div class="invalid-feedback">Example invalid custom select feedback</div>
         </div>
       </div>
     </div>
     <div class="form-row d-flex justify-content-center">
       <div class="col-md-2 mb-3">
-        <label for="validationServer01">Prénom<span style="color: crimson;">*</span></label>
-        <input type="text" class="form-control" id="validationServer01" placeholder="Prénom" required>
+        <label for="validationServer01">First name<span style="color: crimson;">*</span></label>
+        <input type="text" class="form-control" id="validationServer01" placeholder="First name" required>
       </div>
       <div class="col-md-2 mb-3">
-        <label for="validationServer02">Nom<span style="color: crimson;">*</span></label>
-        <input type="text" class="form-control" id="validationServer02" placeholder="Nom" required>
+        <label for="validationServer02">Last name<span style="color: crimson;">*</span></label>
+        <input type="text" class="form-control" id="validationServer02" placeholder="Last name" required>
       </div>
     </div>
     <div class="form-row d-flex justify-content-center">
       <div class="col-md-4 mb-3">
-        <label for="validationServerUsername">Email<span style="color: crimson;">*</span></label>
+        <label for="validationServerUsername">Username<span style="color: crimson;">*</span></label>
         <div class="input-group">
-          <input type="text" class="form-control" id="validationServerUsername" placeholder="nom.prenom"
+          <input type="text" class="form-control" id="validationServerUsername" placeholder="name"
             aria-describedby="inputGroupPrepend3" required>
           <div class="invalid-feedback">
             Please choose a username.
@@ -153,14 +154,15 @@
       <div class="col-md-4 mb-3">
         <div class="custom-file">
           <input type="file" class="custom-file-input" id="customFile">
-          <label class="custom-file-label" for="customFile">Voulez-vous joindre une image à votre rapport ?</label>
+          <label class="custom-file-label" for="customFile">Wanna add an image to your report ?</label>
         </div>
       </div>
     </div>
 
     <div class="form-row d-flex justify-content-center" style="padding: 2rem 0;">
-      <button class="btn btn-dark" type="reset" style="margin-right: 2rem;">Annuler</button>
-      <button class="btn btn-info" type="button" id="sub" data-toggle="modal" data-target="#ModalConfirm">Valider le formulaire</button>
+      <button class="btn btn-dark" type="reset" style="margin-right: 2rem;">Cancel</button>
+      <button class="btn btn-info" type="button" id="sub" data-toggle="modal" data-target="#ModalConfirm">Submit
+        form</button>
       <!-- Modal HTML -->
       <div id="ModalConfirm" class="modal fade">
         <div class="modal-dialog modal-confirm">
@@ -172,8 +174,8 @@
               <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
             </div>
             <div class="modal-body text-center">
-              <h4>Merci !</h4>
-              <p>Nous avons transmis votre rapport avec succès à notre équipe.</p>
+              <h4>Thank you!</h4>
+              <p>We successfully send your report to our service.</p>
             </div>
           </div>
         </div>
