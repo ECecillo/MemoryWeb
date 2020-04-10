@@ -121,7 +121,7 @@
           <div class="input-group-prepend">
             <span class="input-group-text" id="inputGroupPrepend3">@</span>
           </div>
-          <input type="text" class="form-control" id="validationServerUsername" placeholder="Username"
+          <input type="text" class="form-control" id="validationServerUsername" placeholder="gmail.com ..."
             aria-describedby="inputGroupPrepend3" required>
           <div class="invalid-feedback">
             Please choose a username.
@@ -131,9 +131,31 @@
     </div>
     <div class="form-row d-flex justify-content-center">
       <div class="col-md-4 mb-3">
-        <label for="exampleFormControlTextarea1">Message<span style="color: crimson;">*</span></label>
+        <label for="validationServer01">Select the reason of the report<span style="color: crimson;">*</span></label>
+        <div class="form-group" required>
+          <select class="custom-select">
+            <option value="">Login doesn't work</option>
+            <option value="1">Link Down</option>
+            <option value="2">Can't Add a Game</option>
+            <option value="3">Other (please detail in the message box)</option>
+          </select>
+          <div class="invalid-feedback">Example invalid custom select feedback</div>
+        </div>
+      </div>
+    </div>
+    <div class="form-row d-flex justify-content-center">
+      <div class="col-md-4 mb-3">
+        <label for="exampleFormControlTextarea1">Message</label>
         <textarea class="form-control" id="exampleFormControlTextarea1" rows="10" cols="50"
           placeholder="Enter your message" required></textarea>
+      </div>
+    </div>
+    <div class="form-row d-flex justify-content-center">
+      <div class="col-md-4 mb-3">
+        <div class="custom-file">
+          <input type="file" class="custom-file-input" id="customFile">
+          <label class="custom-file-label" for="customFile">Wanna add an image to your report ?</label>
+        </div>
       </div>
     </div>
 
