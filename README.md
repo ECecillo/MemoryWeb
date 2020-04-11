@@ -1,4 +1,6 @@
 ![logo du site](https://i.ibb.co/X2RcpJh/logo.png)
+
+### Lien vers le github du projet : https://github.com/ECecillo/MemoryWeb .
 ### Lien vers le site du projet hebergé par github : https://ececillo.github.io/MemoryWeb/.
 
 Pour afficher les règles de chaque jeux cliquer sur leurs noms.
