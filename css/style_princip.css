@@ -93,7 +93,7 @@ header {
 .container_nav {
 	display: flex;
 	justify-content: center;
-	padding-left: 5.1rem;
+	padding-left: 7.1rem;
 }
 
 img {
@@ -333,10 +333,6 @@ nav ul li a:hover::after {
 		font-size: 2.5rem;
 	}
 
-	.brand {
-		font-size: 5rem;
-	}
-
 	.overlay.menu-open,
 	nav.menu-open {
 		display: flex;
@@ -347,79 +343,6 @@ nav ul li a:hover::after {
 }
 
 /* -------------------------------------------- Fin du style de la navbar perso -------------------------------------------- */
-
-/* 
-.navbar_custom {
-	height: 70px;
-	width: 100%;
-	background: var(--surface-light);
-	color: var(--gray1);
-	-webkit-box-shadow: 0px 11px 100px -18px rgba(0, 0, 0, 1);
-	-moz-box-shadow: 0px 11px 100px -18px rgba(0, 0, 0, 1);
-	box-shadow: 0px 11px 100px -18px rgba(0, 0, 0, 1);
-}
-
-.navbar-nav_custom {
-	display: flex;
-	align-items: center;
-	justify-content: space-evenly;
-	height: 100%;
-}
-
-.dropdown_custom {
-	position: absolute;
-	width: 20rem;
-	opacity: 0;
-	z-index: 2;
-	background: linear-gradient(var(--dropdown-dark), var(--dropdown-light));
-	border-top: 2px solid var(--border-color);
-
-	border-bottom-right-radius: 8px;
-	border-bottom-left-radius: 8px;
-
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-	height: 3rem;
-	margin-top: 1.5rem;
-	padding: 0.5rem;
-
-	box-shadow: rgba(2, 8, 20, 0.1) 0px 0.175em 0.5em;
-	transform: translateX(-40%);
-
-	transition: opacity .15s ease-out;
-}
-
-
-.has-dropdown_custom:focus-within .dropdown_custom {
-	opacity: 1;
-	pointer-events: auto;
-}
-
-
-.dropdown-item_custom a {
-	width: 100%;
-	height: 100%;
-	size: 0.2rem;
-	padding-left: 10px;
-	font-weight: bold;
-}
-
-.dropdown-item_custom a::before {
-	content: ' ';
-	border: 2px solid var(--border-color);
-	border-radius: 50%;
-	width: 2rem;
-	height: 2rem;
-	display: inline-block;
-	vertical-align: middle;
-	margin-right: 10px;
-}
- */
-
-
-
-/* Logo Animation */
 
 /* ---------------------------- Partie qui fait partie du header avec le logo et le paragraphe ---------------------------- */
 
@@ -455,6 +378,7 @@ nav ul li a:hover::after {
 }
 .lang span {
 	margin-left: 1rem;
+	
 }
 
 
@@ -473,6 +397,25 @@ nav ul li a:hover::after {
 @media screen and (min-width: 200px) and (max-width: 620px) {
 	header {
 		clip-path: polygon(50% 0%, 82.78% 52px, 100% 78%, 50% 100%, 0px 78%, 17.22% 52px);
+	}
+	.home_li {
+		margin-top: 16rem;
+	}
+	.nav-item_custom {
+		padding-bottom: 10rem;
+	}
+	.nav-item_custom>.dropdown_custom {
+		margin-top: 5rem;
+		margin-left: 7rem;
+		background: none;
+		box-shadow: none;
+		border-top: none;
+	}
+	.nv {
+		color: var(--gray0);
+	}
+	.nv>.menu-open {
+		padding-left: 2rem;
 	}
 }
 
