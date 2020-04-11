@@ -98,7 +98,7 @@
   <h1 class="d-flex justify-content-center mt-4 mb-3" style="padding: 2rem 0;">Report</h1>
 
   <!-- Contact Form -->
-  <form>
+  <form autocomplete="on">
     <div class="form-row d-flex justify-content-center">
       <div class="col-md-4 mb-3">
         <label for="validationServer01">Select the reason of the report<span style="color: crimson;">*</span></label>
@@ -116,11 +116,13 @@
     <div class="form-row d-flex justify-content-center">
       <div class="col-md-2 mb-3">
         <label for="validationServer01">First name<span style="color: crimson;">*</span></label>
-        <input type="text" class="form-control" id="validationServer01" placeholder="First name" required>
+        <input type="text" class="form-control" id="validationServer01" placeholder="First name"
+          autocomplete="given-name" required>
       </div>
       <div class="col-md-2 mb-3">
         <label for="validationServer02">Last name<span style="color: crimson;">*</span></label>
-        <input type="text" class="form-control" id="validationServer02" placeholder="Last name" required>
+        <input type="text" class="form-control" id="validationServer02" placeholder="Last name"
+          autocomplete="family-name" required>
       </div>
     </div>
     <div class="form-row d-flex justify-content-center">
@@ -128,7 +130,7 @@
         <label for="validationServerUsername">Username<span style="color: crimson;">*</span></label>
         <div class="input-group">
           <input type="text" class="form-control" id="validationServerUsername" placeholder="name"
-            aria-describedby="inputGroupPrepend3" required>
+            aria-describedby="inputGroupPrepend3" autocomplete="email" required>
           <div class="invalid-feedback">
             Please choose a username.
           </div>
@@ -176,6 +178,7 @@
             <div class="modal-body text-center">
               <h4>Thank you!</h4>
               <p>We successfully send your report to our service.</p>
+              <button class="btn" type="button" value="Go_home" onclick="newPage(0)">Home</button>
             </div>
           </div>
         </div>
