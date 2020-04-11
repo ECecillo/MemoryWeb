@@ -20,5 +20,5 @@ Pour afficher les règles de chaque jeux cliquer sur leurs noms.
 | Traduction | **Fonctionnel** |
 | Message de confirmation pour le form | **Fonctionnel** |
 | Bulles d'aide pour aider l'utilisateur à utiliser le site | X |
-| S'occuper de tous les médias queries | En-cours |
+| S'occuper de tous les médias queries | **Fonctionnel** |
 
